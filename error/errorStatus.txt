@@ -1,0 +1,41 @@
+____________________________________________________________________
+|                                                                  |
+|        ___  __   __   __   __      __   __   __   ___  __        |
+|       |__  |__) |__) /  \ |__)    /  ` /  \ |  \ |__  /__`       |
+|       |___ |  \ |  \ \__/ |  \    \__, \__/ |__/ |___ .__/       |
+|                                                                  |
+|                    Errors and their meanings.                    |
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾  
+           Errors associated with MonSoon based scripts.
+--------------------------------------------------------------------
+
+  error ID: (Tornado)
+    -- This script is being updated. Please wait 10-30 minutes before re-executing.
+        -- This script will notify the user. This script will not kick the player unless it is a major update. 
+    
+  error ID: (Hurricane)
+    -- This script is detected. An update is being worked on. Please wait for the new patch.
+        -- This script will kick the player. Players should not re-execute.
+    
+  error ID: (Tsunami)
+    -- This script is broken and is no longer being fixed. You were kicked for your accounts saftey.
+        -- This script is broken. The script will notify the player that it is discontinued. Script will only kick players if it is detected.
+    
+  error ID: (Typhoon)
+    -- This script is private. You do not have access to this script. If you beleive this is a mistake, contact LunarMoon for assistance.
+        -- Your a goofy goober ya :3 Yous, sir, got kicked because you do not have access to the script.
+
+
+--------------------------------------------------------------------
+        Please refer to the following page to stay up-to-date
+               with MonSoon Hub and affiliated partners.
+--------------------------------------------------------------------
+                   All code created by LunarMoons
+____________________________________________________________________
+|             __  __             ____                              |
+|            |  \/  | ___  _ __ / ___|  ___   ___  _ __            |
+|            | |\/| |/ _ \| '_ \\___ \ / _ \ / _ \| '_ \           |
+|            | |  | | (_) | | | |___) | (_) | (_) | | | |          |
+|            |_|  |_|\___/|_| |_|____/ \___/ \___/|_| |_|          |
+|                                                                  |
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾  
