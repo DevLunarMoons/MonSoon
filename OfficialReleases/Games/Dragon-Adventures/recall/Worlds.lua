@@ -1,4 +1,17 @@
-local worldIDs =  {}
+local worldIDs =  {4601778915,3475397644,3475419198,3475422608,3487210751,3623549100,3737848045,3752680052,4174118306,4728805070,4869039553}
+-- Undercity:     4601778915
+-- Origins:       3475397644
+-- Grassland:     3475419198
+-- Jungle:        3475422608
+-- Volcano:       3487210751
+-- Tundra:        3623549100
+-- Ocean:         3737848045
+-- Desert:        3752680052
+-- Fantasy:       4174118306
+-- Wasteland:     4728805070
+-- Prehistoric:   4869039553
+
+local Ids = {5956785391,6152116144,7447158459,9321822839,9366093452,9627847912,10126016208,10636616861,11468034852,11468075017,11468159863}
 if table.find(Ids,game.PlaceId) then
-    loadstring(game:HttpGet('Raw Github Page'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/dragonadventures/main/Project_S'))()
 end
