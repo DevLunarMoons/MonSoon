@@ -1,0 +1,7 @@
+-- ~:| error |:~ --
+print ("Ies a goofy goober jyas :P")
+print ("Yous a goofi goober jya :3")
+print ("Wes alls goofe goobers jya")
+-- ~:| error |:~ --
+game.Players.LocalPlayer:Kick("\n(ERROR ID: Typhoon) (Code:0041)\n\nYou do not have access to this script.\n")
+-- ~:| error |:~ --
