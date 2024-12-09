@@ -3,6 +3,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Title = "Look at your console, buddy...",
 	Text = ">:("
 })
+print ("Ie has a song tuo sings tuo yous! :)")
 task.wait(5)
 print ("Ies a goofy goober jyas :P")
 task.wait(4)
