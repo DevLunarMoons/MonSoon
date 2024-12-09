@@ -1,0 +1,5 @@
+-- Place this at the bottom of the main hub.
+-- queue_on_teleport[[loadstring(game:HttpGet("this scripts github Page"))()]]
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+-- replace with the hubs raw github page
