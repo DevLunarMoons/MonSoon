@@ -1,1 +1,1 @@
-print ("hallo")
+print ("Took ", tick() - StartTime, " To Load <3")
