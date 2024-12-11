@@ -1,1 +1,2 @@
+local StartTime = tick()
 print ("Took ", tick() - StartTime, " To Load <3")
