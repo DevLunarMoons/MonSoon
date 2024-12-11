@@ -1,3 +1,13 @@
+
+--Locals for each node.
+local EggNode = 
+local FoodNode = 
+local MaterialNode = 
+local BoneNode = 
+local ChestNode = 
+
+
+
 --Use for Resource and Egg nodes.
 
 local object = Sense.AddInstance(workspace.Part, {
@@ -13,3 +23,7 @@ local object = Sense.AddInstance(workspace.Part, {
 })
 
 object.options.enabled = false
+
+-- workspace.Interactions.Nodes.Eggs.ActiveNodes.Part
+-- workspace.Interactions.Nodes.Eggs.ActiveNodes:GetChildren()
+8
