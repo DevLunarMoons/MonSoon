@@ -1,8 +1,8 @@
 
 --Locals for each node.
-local EggNode = 
-local FoodNode = 
-local MaterialNode = 
+local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[#].EggModel.Egg
+local FoodNode = workspace.Interactions.Nodes.Food:GetChildren()[#].BillboardPart
+local MaterialNode = workspace.Interactions.Nodes.Resources:GetChildren()[#].BillboardPart
 local BoneNode = 
 local ChestNode = 
 
