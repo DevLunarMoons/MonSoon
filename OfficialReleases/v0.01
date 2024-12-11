@@ -1,3 +1,27 @@
-local StartTime = tick()
-print ("eh")
-print ("Took ", tick() - StartTime, " To Load <3")
+print ("MonSoon Hub Connected")
+-- This script is made by DevLunarMoons as a part of the MonSoon Developer Hub.
+------------------------------------------------------------------------------------
+--									                                                              --
+--            __  ___           _____                      __  __      __         --
+--           /  |/  /___  ____ / ___/____  ____  ____     / / / /_  __/ /_        --
+--          / /|_/ / __ \/ __ \\__ \/ __ \/ __ \/ __ \   / /_/ / / / / __ \       --
+--         / /  / / /_/ / / / /__/ / /_/ / /_/ / / / /  / __  / /_/ / /_/ /       --
+--        /_/  /_/\____/_/ /_/____/\____/\____/_/ /_/  /_/ /_/\__,_/_.___/        --
+--									                                                              --
+--    									                                                          --
+--                    	 			made by: DevLunarMoon			                          --
+------------------------------------------------------------------------------------
+
+-- 1. Load the library
+local Sense = loadstring(game:HttpGet('https://sirius.menu/sense'))()
+
+-- 2. Change the configuration.
+Sense.teamSettings.enemy.enabled = true
+Sense.teamSettings.enemy.box = true
+Sense.teamSettings.enemy.boxColor[1] = Color3.new(0, 0.25, 0.75)
+
+-- 3. Load the esp. It doesn't really matter where you put this, but it's recommended you put it at the end of your script.
+Sense.Load()
+
+-- 4. Unload the esp. When you unload Sense, it will clean up every drawing object and instance it has made.
+--Sense.Unload()
