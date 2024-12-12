@@ -25,7 +25,7 @@ print ("Dragon Adventures ESP Loaded")
 
 --Use for Resource and Egg nodes.
 
-local object = Sense.AddInstance(workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[5].EggModel.Egg, {
+local object = Sense.AddInstance(workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren(), {
     --enabled = false,
     text = "{name}", -- Placeholders: {name}, {distance}, {position}
     textColor = { Color3.new(1,1,1), 1 },
