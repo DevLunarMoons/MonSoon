@@ -19,15 +19,16 @@ for _, resource in workspace.Interactions.Nodes.Eggs.ActivesNodes:GetDescendants
     table.insert(
         eggESP,
         Sense.AddInstance(resource, {
-        enabled = false,
-        text = "{name} ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
-        textColor = { Color3.new(1,1,1), 1 },
-        textOutline = true,
-        textOutlineColor = Color3.new(),
-        textSize = 13,
-        textFont = 2,
-        limitDistance = false,
-        maxDistance = 150
-})
+            enabled = false,
+            text = "{name} ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
+            textColor = { Color3.new(1,1,1), 1 },
+            textOutline = true,
+            textOutlineColor = Color3.new(),
+            textSize = 13,
+            textFont = 2,
+            limitDistance = false,
+            maxDistance = 150
+        })
+end
 -- workspace.Interactions.Nodes.Eggs.ActiveNodes.Part
 -- workspace.Interactions.Nodes.Eggs.ActiveNodes:GetChildren()
