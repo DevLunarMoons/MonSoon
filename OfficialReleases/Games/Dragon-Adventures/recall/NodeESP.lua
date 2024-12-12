@@ -28,7 +28,7 @@ print ("Dragon Adventures ESP Loaded")
 ----------------------------------------------------------------------------------------------
 -- Individual ESP for each object. Do not use :GetChildren(), rather use :GetDescendants().
 
--- TODO: Egg ESP needs to be updated when a child is added to the "ActiveNodes" folder.
+-- TODO: Egg ESP needs to be updated when a child is added to the "ActiveNodes" folder. Food ESP needs to detect if the node's dead value is true and not show it.
 -- Egg ESP
 local eggESP = {}
 local eggName = "Egg"
@@ -69,6 +69,29 @@ for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
         Sense.AddInstance(resource, {
             enabled = true,
             text = "Food ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
+            textColor = { Color3.new(1,1,1), 1 },
+            textOutline = true,
+            textOutlineColor = Color3.new(),
+            textSize = 13,
+            textFont = 2,
+            limitDistance = false,
+            maxDistance = 150
+        })
+    )
+end
+
+-- Chest ESP
+local chestESP = {}
+local chestName = "Body"
+for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
+    if resource.Name ~= chestName then 
+        continue
+    end
+    table.insert(
+        chestESP,
+        Sense.AddInstance(resource, {
+            enabled = true,
+            text = "Chest ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
             textColor = { Color3.new(1,1,1), 1 },
             textOutline = true,
             textOutlineColor = Color3.new(),
