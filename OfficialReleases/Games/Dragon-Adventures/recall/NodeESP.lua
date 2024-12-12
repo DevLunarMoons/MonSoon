@@ -1,7 +1,7 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/main/OfficialReleases/SenseESP.lua'))()
 print ("Dragon Adventures ESP Loaded")
 --Locals for each node.
---local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[#].EggModel.Egg
+--local EggNode = workspace.Interactions.Nodes.Eggs.ActiveNodes:GetChildren()[#].EggModel.Egg
 --local FoodNode = workspace.Interactions.Nodes.Food:GetChildren()[#].BillboardPart
 --local MaterialNode = workspace.Interactions.Nodes.Resources:GetChildren()[#].BillboardPart
 --local BoneNode = workspace.Interactions.Nodes.BoneMeal:GetChildren()[#].BillboardPart
@@ -12,7 +12,7 @@ print ("Dragon Adventures ESP Loaded")
 local eggESP = {}
 local eggName = "Egg"
 
-for _, resource in workspace.Interactions.Nodes.Eggs.ActivesNodes:GetDescendants() do
+for _, resource in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants() do
     if resource.Name ~= eggName then 
         continue
     end
