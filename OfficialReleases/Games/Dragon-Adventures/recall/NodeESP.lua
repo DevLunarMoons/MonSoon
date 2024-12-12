@@ -12,7 +12,7 @@ print ("Dragon Adventures ESP Loaded")
 local eggESP = {}
 local eggName = "Egg"
 
-for _, resource in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants() do
+for , resource in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants() do
     if resource.Name ~= eggName then 
         continue
     end
