@@ -1,10 +1,10 @@
+--[[
 
--------------------------------------------------
---           Sense | made by: Sirius           --
---                Instance ESP                 --
---           Game: Dragon Adventures           --
--------------------------------------------------
+          Sense | made by: Sirius           
+                Instance ESP                
+          Game: Dragon Adventures          
 
+]]--
                 print ("Sense Loaded!")
                 -- This is required at the top of the script.
                 local Sense = loadstring(game:HttpGet('https://sirius.menu/sense'))()
@@ -15,16 +15,16 @@
                 Sense.Load()
                 -- Sense.Unload()
                 -- Use as the command to unload ESP
-----------------------------------------------------------------------------------------------
--- TODO:
--- Make the esp reload when a new descendant is added to select folders.
--- Make Resource Nodes check the health of their objects.
-----------------------------------------------------------------------------------------------
--- Compleated:
--- Egg ESP (Doesn't Respawn)
--- Food ESP (Shows "Dead" nodes as well)
--- Chest ESP (Does not show all chest locations)
-----------------------------------------------------------------------------------------------
+--[[--------------------------------------------------------------------------------------------
+              TODO:
+              Make the esp reload when a new descendant is added to select folders.
+              Make Resource Nodes check the health of their objects.
+              
+              Compleated:
+              Egg ESP (Doesn't Respawn)
+              Food ESP (Shows "Dead" nodes as well)
+              Chest ESP (Does not show all chest locations)
+----------------------------------------------------------------------------------------------]]
 print ("Dragon Adventures ESP Loaded")
 --Locals for each node.
 --local EggNode = workspace.Interactions.Nodes.Eggs.ActiveNodes:GetChildren()[#].EggModel.Egg
@@ -70,6 +70,9 @@ end
 local foodESP = {}
 local foodName = "BillboardPart"
 for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
+    if workspace.Interactions.Nodes.Food.LargeFoodNode.BillboardPart.Dead == false then
+      continue
+    end
     if resource.Name ~= foodName then 
         continue
     end
