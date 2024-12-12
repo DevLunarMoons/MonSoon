@@ -16,6 +16,15 @@
                 -- Sense.Unload()
                 -- Use as the command to unload ESP
 ----------------------------------------------------------------------------------------------
+-- TODO:
+-- Make the esp reload when a new descendant is added to select folders.
+-- Make Resource Nodes check the health of their objects.
+----------------------------------------------------------------------------------------------
+-- Compleated:
+-- Egg ESP (Doesn't Respawn)
+-- Food ESP (Shows "Dead" nodes as well)
+-- Chest ESP (Does not show all chest locations)
+----------------------------------------------------------------------------------------------
 print ("Dragon Adventures ESP Loaded")
 --Locals for each node.
 --local EggNode = workspace.Interactions.Nodes.Eggs.ActiveNodes:GetChildren()[#].EggModel.Egg
@@ -83,7 +92,7 @@ end
 -- Bug: Not all chest show. Make it only show the "Weld" body part instead of the mesh part.
 -- Chest ESP
 local chestESP = {}
-local chestName = "Body"
+local chestName = "GoldChest", "SilverChest", "BronzeChest"
 for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
         if resource.Name ~= chestName then 
             continue
@@ -92,7 +101,7 @@ for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
         chestESP,
         Sense.AddInstance(resource, {
             enabled = true,
-            text = "Chest ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
+            text = "{name} ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
             textColor = { Color3.new(1,1,1), 1 },
             textOutline = true,
             textOutlineColor = Color3.new(),
