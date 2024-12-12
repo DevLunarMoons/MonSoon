@@ -70,11 +70,11 @@ end
 local foodESP = {}
 local foodName = "BillboardPart"
 for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
-    if workspace.Interactions.Nodes.Food.LargeFoodNode.BillboardPart.Dead == false then
+    if workspace.Interactions.Nodes.Food.LargeFoodNode.BillboardPart.Dead == true then
       continue
-    end
     if resource.Name ~= foodName then 
         continue
+    end
     end
     table.insert(
         foodESP,
