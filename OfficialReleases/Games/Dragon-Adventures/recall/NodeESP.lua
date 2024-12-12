@@ -43,11 +43,11 @@ local eggESP = {}
 local eggName = "Egg"
 for _, resource in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants() do
           -- Reloads the ESP when an egg respawns
-          for i,v in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants() do
-                    v.DescendantAdded:Connect(function(child)
-                              print(child)
-                    end)
-          end
+--          for i,v in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants() do
+  --                  v.DescendantAdded:Connect(function(child)
+    --                          print(child)
+      --              end)
+        --  end
     if resource.Name ~= eggName then 
         continue
     end
