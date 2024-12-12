@@ -1,12 +1,13 @@
 
 --Locals for each node.
-local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()--[#].EggModel.Egg
-local FoodNode = workspace.Interactions.Nodes.Food:GetChildren()[#].BillboardPart
-local MaterialNode = workspace.Interactions.Nodes.Resources:GetChildren()[#].BillboardPart
-local BoneNode = workspace.Interactions.Nodes.BoneMeal:GetChildren()[#].BillboardPart
-local ChestNode = workspace.Interactions.Nodes.Treasure[#].Body
-local MobNode = workspace.Interactions.Nodes.Mobs:GetChildren()[#]
-local MobsNodes = workspace.MobFolder:GetChildren()
+local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren --()[#].EggModel.Egg
+--local FoodNode = workspace.Interactions.Nodes.Food:GetChildren()[#].BillboardPart
+--local MaterialNode = workspace.Interactions.Nodes.Resources:GetChildren()[#].BillboardPart
+--local BoneNode = workspace.Interactions.Nodes.BoneMeal:GetChildren()[#].BillboardPart
+--local ChestNode = workspace.Interactions.Nodes.Treasure[#].Body
+--local MobNode = workspace.Interactions.Nodes.Mobs:GetChildren()[#]
+--local MobsNodes = workspace.MobFolder:GetChildren()
+
 --Use for Resource and Egg nodes.
 
 local object = Sense.AddInstance(EggNode {
@@ -21,8 +22,7 @@ local object = Sense.AddInstance(EggNode {
     maxDistance = 150
 })
 
-object.options.enabled = false
+object.options.enabled = true
 
 -- workspace.Interactions.Nodes.Eggs.ActiveNodes.Part
 -- workspace.Interactions.Nodes.Eggs.ActiveNodes:GetChildren()
-8
