@@ -1,4 +1,4 @@
---
+print ("Sense: Dragon Adventures Loaded")
 --Locals for each node.
 --local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[#].EggModel.Egg
 --local FoodNode = workspace.Interactions.Nodes.Food:GetChildren()[#].BillboardPart
