@@ -5,16 +5,16 @@
 --           Game: Dragon Adventures           --
 -------------------------------------------------
 
-print ("Sense Loaded!")
--- This is required at the top of the script.
-local Sense = loadstring(game:HttpGet('https://sirius.menu/sense'))()
-    Sense.teamSettings.enemy.enabled = false
-    Sense.teamSettings.enemy.box = false
-    Sense.teamSettings.enemy.boxColor[1] = Color3.new(57, 255, 20)
-
-Sense.Load()
--- Sense.Unload()
--- Use as the command to unload ESP
+                print ("Sense Loaded!")
+                -- This is required at the top of the script.
+                local Sense = loadstring(game:HttpGet('https://sirius.menu/sense'))()
+                    Sense.teamSettings.enemy.enabled = false
+                    Sense.teamSettings.enemy.box = false
+                    Sense.teamSettings.enemy.boxColor[1] = Color3.new(57, 255, 20)
+                
+                Sense.Load()
+                -- Sense.Unload()
+                -- Use as the command to unload ESP
 ----------------------------------------------------------------------------------------------
 print ("Dragon Adventures ESP Loaded")
 --Locals for each node.
@@ -80,6 +80,7 @@ for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
     )
 end
 
+-- Bug: Not all chest show. Make it only show the "Weld" body part instead of the mesh part.
 -- Chest ESP
 local chestESP = {}
 local chestName = "Body"
