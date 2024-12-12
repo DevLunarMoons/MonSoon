@@ -1,6 +1,6 @@
-
+--
 --Locals for each node.
-local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren --()[#].EggModel.Egg
+--local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[#].EggModel.Egg
 --local FoodNode = workspace.Interactions.Nodes.Food:GetChildren()[#].BillboardPart
 --local MaterialNode = workspace.Interactions.Nodes.Resources:GetChildren()[#].BillboardPart
 --local BoneNode = workspace.Interactions.Nodes.BoneMeal:GetChildren()[#].BillboardPart
@@ -10,7 +10,7 @@ local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren --()[
 
 --Use for Resource and Egg nodes.
 
-local object = Sense.AddInstance(EggNode {
+local object = Sense.AddInstance(workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[5].EggModel.Egg {
     --enabled = false,
     text = "{name}", -- Placeholders: {name}, {distance}, {position}
     textColor = { Color3.new(1,1,1), 1 },
