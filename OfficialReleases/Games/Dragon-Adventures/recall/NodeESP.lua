@@ -1,5 +1,5 @@
-print ("Sense: Dragon Adventures Loaded")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/main/OfficialReleases/SenseESP.lua'))()
+print ("Dragon Adventures ESP Loaded")
 --Locals for each node.
 --local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[#].EggModel.Egg
 --local FoodNode = workspace.Interactions.Nodes.Food:GetChildren()[#].BillboardPart
@@ -11,7 +11,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon
 
 --Use for Resource and Egg nodes.
 
-local object = Sense.AddInstance(workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[5].EggModel.Egg {
+local object = Sense.AddInstance(workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[5].EggModel.Egg, {
     --enabled = false,
     text = "{name}", -- Placeholders: {name}, {distance}, {position}
     textColor = { Color3.new(1,1,1), 1 },
