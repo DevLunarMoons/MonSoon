@@ -1,4 +1,4 @@
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/main/OfficialReleases/SenseESP.lua'))()
 print ("Dragon Adventures ESP Loaded")
 --Locals for each node.
 --local EggNode = workspace.Interactions.Nodes.Eggs.ActiveNodes:GetChildren()[#].EggModel.Egg
