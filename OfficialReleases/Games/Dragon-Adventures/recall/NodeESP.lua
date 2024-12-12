@@ -92,7 +92,7 @@ end
 -- Bug: Not all chest show. Make it only show the "Weld" body part instead of the mesh part.
 -- Chest ESP
 local chestESP = {}
-local chestName = "GoldChest", "SilverChest", "BronzeChest"
+local chestName = "Body"
 for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
         if resource.Name ~= chestName then 
             continue
@@ -101,7 +101,7 @@ for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
         chestESP,
         Sense.AddInstance(resource, {
             enabled = true,
-            text = "{name} ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
+            text = "Chest ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
             textColor = { Color3.new(1,1,1), 1 },
             textOutline = true,
             textOutlineColor = Color3.new(),
