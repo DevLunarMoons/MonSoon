@@ -81,12 +81,21 @@ for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
 end
 
 -- Chest ESP
+for i, v in next, ReplicatedStorage.Storage.Items.Items.Food:GetChildren() do
+    if v:IsA("ModuleScript") then
+        for i, _ in next, require(v) do
+            table.insert(foods, i)
+        end
+    end
+end
+
 local chestESP = {}
 local chestName = "Body"
 for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
-    if resource.Name ~= chestName then 
-        continue
-    end
+    if resource:IsA("Weld") then
+        if resource.Name ~= chestName then 
+            continue
+        end
     table.insert(
         chestESP,
         Sense.AddInstance(resource, {
@@ -101,4 +110,5 @@ for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
             maxDistance = 150
         })
     )
+    end
 end
