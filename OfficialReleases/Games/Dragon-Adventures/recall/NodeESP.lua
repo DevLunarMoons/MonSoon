@@ -33,7 +33,7 @@ for _, resource in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants(
     table.insert(
         eggESP,
         Sense.AddInstance(resource, {
-            enabled = false,
+            enabled = true,
             text = "{name} ({distance} studs)", -- Placeholders: {name}, {distance}, {position}
             textColor = { Color3.new(1,1,1), 1 },
             textOutline = true,
