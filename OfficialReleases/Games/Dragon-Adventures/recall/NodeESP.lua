@@ -81,14 +81,6 @@ for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
 end
 
 -- Chest ESP
-for i, v in next, ReplicatedStorage.Storage.Items.Items.Food:GetChildren() do
-    if v:IsA("ModuleScript") then
-        for i, _ in next, require(v) do
-            table.insert(foods, i)
-        end
-    end
-end
-
 local chestESP = {}
 local chestName = "Body"
 for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
