@@ -1,24 +1,34 @@
 --[[
---
---          Sense | made by: Sirius           
---                Instance ESP                
---          Game: Dragon Adventures          
---
-]]--
-print ("Sense Loaded!")
--- This is required at the top of the script.
-local Sense = loadstring(game:HttpGet('https://sirius.menu/sense'))()
-Sense.teamSettings.enemy.enabled = false
-Sense.teamSettings.enemy.box = false
-Sense.teamSettings.enemy.boxColor[1] = Color3.new(57, 255, 20)
+______________________________________________________________________________
+|                                                                            |
+|       .oooooo..o oooooooooooo ooooo      ooo  .oooooo..o oooooooooooo      |
+|      d8P'    `Y8 `888'     `8 `888b.     `8' d8P'    `Y8 `888'     `8      |
+|      Y88bo.       888          8 `88b.    8  Y88bo.       888              |
+|       `"Y8888o.   888oooo8     8   `88b.  8   `"Y8888o.   888oooo8         |
+|           `"Y88b  888    "     8     `88b.8       `"Y88b  888    "         |
+|      oo     .d8P  888       o  8       `888  oo     .d8P  888       o      |
+|      8""88888P'  o888ooooood8 o8o        `8  8""88888P'  o888ooooood8      |
+|                                                                            |
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+                          Sense | made by: Sirius        
+]]
 
-Sense.Load()
--- Sense.Unload()
--- Use as the command to unload ESP
+
+
+        print ("Sense Loaded!")
+        local Sense = loadstring(game:HttpGet('https://sirius.menu/sense'))()
+        Sense.teamSettings.enemy.enabled = false
+        Sense.teamSettings.enemy.box = false
+        Sense.teamSettings.enemy.boxColor[1] = Color3.new(57, 255, 20)
+        
+        Sense.Load()
+        -- Sense.Unload()
+
 --[[--------------------------------------------------------------------------------------------
               TODO:
               Make the esp reload when a new descendant is added to select folders.
               Make Resource Nodes check the health of their objects.
+
               
               Compleated:
               Egg ESP (Doesn't Respawn)
@@ -73,7 +83,6 @@ local foodName = "BillboardPart"
 for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
     if resource.Name ~= foodName then 
         continue
-    end
     end
     table.insert(
         foodESP,
