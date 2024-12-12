@@ -13,7 +13,7 @@ local eggESP = {}
 local eggName = "Egg"
 
 for _, resource in workspace.Interactions.Nodes.Eggs.ActivesNodes:GetDescendants() do
-    if resource.Name -= eggName then 
+    if resource.Name ~= eggName then 
         continue
     end
     table.insert(
