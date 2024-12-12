@@ -29,6 +29,7 @@ for _, resource in workspace.Interactions.Nodes.Eggs.ActivesNodes:GetDescendants
             limitDistance = false,
             maxDistance = 150
         })
+    )
 end
 -- workspace.Interactions.Nodes.Eggs.ActiveNodes.Part
 -- workspace.Interactions.Nodes.Eggs.ActiveNodes:GetChildren()
