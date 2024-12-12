@@ -84,7 +84,6 @@ end
 local chestESP = {}
 local chestName = "Body"
 for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
-    if resource:IsA("Weld") then
         if resource.Name ~= chestName then 
             continue
         end
@@ -102,5 +101,4 @@ for _, resource in workspace.Interactions.Nodes.Treasure:GetDescendants() do
             maxDistance = 150
         })
     )
-    end
 end
