@@ -1,20 +1,20 @@
 --[[
-
-          Sense | made by: Sirius           
-                Instance ESP                
-          Game: Dragon Adventures          
-
+--
+--          Sense | made by: Sirius           
+--                Instance ESP                
+--          Game: Dragon Adventures          
+--
 ]]--
-                print ("Sense Loaded!")
-                -- This is required at the top of the script.
-                local Sense = loadstring(game:HttpGet('https://sirius.menu/sense'))()
-                    Sense.teamSettings.enemy.enabled = false
-                    Sense.teamSettings.enemy.box = false
-                    Sense.teamSettings.enemy.boxColor[1] = Color3.new(57, 255, 20)
-                
-                Sense.Load()
-                -- Sense.Unload()
-                -- Use as the command to unload ESP
+print ("Sense Loaded!")
+-- This is required at the top of the script.
+local Sense = loadstring(game:HttpGet('https://sirius.menu/sense'))()
+Sense.teamSettings.enemy.enabled = false
+Sense.teamSettings.enemy.box = false
+Sense.teamSettings.enemy.boxColor[1] = Color3.new(57, 255, 20)
+
+Sense.Load()
+-- Sense.Unload()
+-- Use as the command to unload ESP
 --[[--------------------------------------------------------------------------------------------
               TODO:
               Make the esp reload when a new descendant is added to select folders.
@@ -42,11 +42,12 @@ print ("Dragon Adventures ESP Loaded")
 local eggESP = {}
 local eggName = "Egg"
 for _, resource in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants() do
---    for i,v in workspace:GetDescendants() do
---	    v.DescendantAdded:Connect(function(child)
---		    print(child)
---	    end)
---    end
+          -- Reloads the ESP when an egg respawns
+          for i,v in workspace.Interactions.Nodes.Eggs.ActiveNodes:GetDescendants() do
+                    v.DescendantAdded:Connect(function(child)
+                              print(child)
+                    end)
+          end
     if resource.Name ~= eggName then 
         continue
     end
@@ -70,8 +71,6 @@ end
 local foodESP = {}
 local foodName = "BillboardPart"
 for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
-    if workspace.Interactions.Nodes.Food.LargeFoodNode.BillboardPart.Dead == true then
-      continue
     if resource.Name ~= foodName then 
         continue
     end
