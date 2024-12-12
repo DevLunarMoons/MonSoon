@@ -1,4 +1,5 @@
 print ("Sense: Dragon Adventures Loaded")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/main/OfficialReleases/SenseESP.lua'))()
 --Locals for each node.
 --local EggNode = workspace.Interactions.Nodes.Eggs.ActivesNodes:GetChildren()[#].EggModel.Egg
 --local FoodNode = workspace.Interactions.Nodes.Food:GetChildren()[#].BillboardPart
