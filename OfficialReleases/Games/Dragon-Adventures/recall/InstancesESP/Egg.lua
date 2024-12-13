@@ -20,16 +20,15 @@ local function handleNewObject(obj)
 
                 TextLabel.Parent = BillboardGui
                 TextLabel.BackgroundTransparency = 1
-                TextLabel.Size = UDim2.new(1, 0, 1, 0)
-                TextLabel.Text = "Door" -- Display text
+                TextLabel.Size = UDim2.new(0.5, 0, 0.5, 0)
+                TextLabel.Text = "Egg ({distance})" -- Display text
                 TextLabel.TextScaled = true
                 TextLabel.TextStrokeTransparency = 0.5 -- Text stroke for visibility
 
                 -- Removed the initial rotation check and related logic
 
                 local function updateColors()
-                    local hue = tick() % 5 / 5 
-                    local color = Color3.fromHSV(hue, 1, 1)
+                    local color = Color3.fromHSV(14, 0.9, 1)
                     TextLabel.TextColor3 = color
                 end
 
