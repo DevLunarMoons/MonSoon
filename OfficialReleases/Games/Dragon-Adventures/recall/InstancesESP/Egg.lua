@@ -20,7 +20,7 @@ local function handleNewObject(obj)
 
                 TextLabel.Parent = BillboardGui
                 TextLabel.BackgroundTransparency = 1
-                TextLabel.Size = UDim2.new(0.5, 0, 0.5, 0)
+                TextLabel.Size = UDim2.new(0.7, 0, 0.7, 0)
                 TextLabel.Text = "Egg" -- Display text
                 TextLabel.TextScaled = true
                 TextLabel.TextStrokeTransparency = 0.5 -- Text stroke for visibility
@@ -28,7 +28,7 @@ local function handleNewObject(obj)
                 -- Removed the initial rotation check and related logic
 
                 local function updateColors()
-                    local color = Color3.fromHSV(14, 0.9, 1)
+                    local color = Color3.fromHSV(120, 1, 1)
                     TextLabel.TextColor3 = color
                 end
 
