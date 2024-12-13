@@ -47,7 +47,6 @@ print ("Dragon Adventures ESP Loaded")
 ----------------------------------------------------------------------------------------------
 -- Individual ESP for each object. Do not use :GetChildren(), rather use :GetDescendants().
 
--- TODO: Egg ESP needs to be updated when a child is added to the "ActiveNodes" folder. Food ESP needs to detect if the node's dead value is true and not show it.
 -- Egg ESP
 local eggESP = {}
 local eggName = "Egg"
@@ -100,7 +99,6 @@ for _, resource in workspace.Interactions.Nodes.Food:GetDescendants() do
     )
 end
 
--- Bug: Not all chest show. Make it only show the "Weld" body part instead of the mesh part.
 -- Chest ESP
 local chestESP = {}
 local chestName = "Body"
