@@ -63,4 +63,3 @@ RunService.Heartbeat:Connect(function(deltaTime)
 end)
 
 handleExistingObjects()
-end
