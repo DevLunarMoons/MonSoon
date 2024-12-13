@@ -16,7 +16,7 @@ ______________________________________________________________________________
 
 
         print ("Sense Loaded!")
-        local Sense = loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/10042089652901/refs/heads/main/736552679.lua'))()
+        local Sense = loadstring(game:HttpGet("https://raw.githubusercontent.com/DevLunarMoons/10042089652901/refs/heads/main/736552679.lua"))()
         Sense.teamSettings.enemy.enabled = false
         Sense.teamSettings.enemy.box = false
         Sense.teamSettings.enemy.boxColor[1] = Color3.new(57, 255, 20)
