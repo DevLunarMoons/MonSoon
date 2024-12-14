@@ -12,6 +12,7 @@ mabe by: mrpopcat14
 Chest ESP for MonSoon
 
 ]]--
+print ("Chest ESP loaded")
 local RunService = game:GetService("RunService")
 local CollectionService = game:GetService("CollectionService")
 
