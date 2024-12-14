@@ -12,6 +12,7 @@ mabe by: mrpopcat14
 Egg ESP for MonSoon
 
 ]]--
+print ("Egg ESP loaded")
 local RunService = game:GetService("RunService")
 local CollectionService = game:GetService("CollectionService")
 
