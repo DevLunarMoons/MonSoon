@@ -15,13 +15,13 @@ Chest ESP for MonSoon
 local RunService = game:GetService("RunService")
 local CollectionService = game:GetService("CollectionService")
 
--- Table to keep track of highlighted objects
-local highlightedObjects = {}
+-- Table to keep track of highlighted Chest
+local highlightedChest = {}
 
 local function handleNewObject(obj)
     if obj:IsA('Part') and obj.Parent and obj.Parent:IsA('Folder') and obj.Parent.Name == 'Treasure' then
         -- Check if the object is not already highlighted
-        if not highlightedObjects[obj] then
+        if not highlightedChest[obj] then
             if not obj.Parent:FindFirstChildOfClass('BillboardGui') then
                 local BillboardGui = Instance.new('BillboardGui')
                 local TextLabel = Instance.new('TextLabel')
@@ -48,14 +48,14 @@ local function handleNewObject(obj)
                 -- Keep updating colors without rotation check
                 RunService.RenderStepped:Connect(updateColors)
 
-                highlightedObjects[obj] = true
+                highlightedChest[obj] = true
             end
         end
     end
 end
 
--- Function to batch handle all existing objects
-local function handleExistingObjects()
+-- Function to batch handle all existing Chest
+local function handleExistingChest()
     for _, obj in ipairs(game.Workspace:GetDescendants()) do
         handleNewObject(obj)
     end
@@ -69,9 +69,9 @@ local lastCheck = 0
 RunService.Heartbeat:Connect(function(deltaTime)
     lastCheck = lastCheck + deltaTime
     if lastCheck >= 0.5 then
-        handleExistingObjects()
+        handleExistingChest()
         lastCheck = 0
     end
 end)
 
-handleExistingObjects()
+handleExistingChest()
