@@ -1,0 +1,35 @@
+Main
+  AutoGrow
+  AutoIncubate
+    SelectEgg
+  SellAll
+    SelectItem/Category
+  AutoHeal
+    SelectItem
+
+CustomStats
+  NoBiteColldown
+  NoDashCooldown
+  WalkSpeed
+  FlySpeed
+  TurnSpeed
+
+AutoFarm
+  CollectEggs
+  FarmMobs
+  Fish
+  CollectNode
+    SelectNode
+
+Teleport
+  ToPlot
+  FishingZone
+
+Event
+
+ESP
+
+Other
+  NoClip
+  AntiAFK
+  LowTextures
