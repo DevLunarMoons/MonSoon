@@ -15,5 +15,20 @@ print ("MonSoon Hub Connected")
 -- Load the ESP for Players
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/main/OfficialReleases/SenseESP.lua'))()
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/main/OfficialReleases/Games/Dragon-Adventures/recall/NodeESP.lua'))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/refs/heads/main/OfficialReleases/Games/Dragon-Adventures/recall/InstancesESP/Egg.lua'))()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/refs/heads/main/OfficialReleases/Games/Dragon-Adventures/recall/InstancesESP/Chest.lua'))()
+-- loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/refs/heads/main/OfficialReleases/Games/Dragon-Adventures/recall/InstancesESP/Egg.lua'))()
+-- loadstring(game:HttpGet('https://raw.githubusercontent.com/DevLunarMoons/MonSoon/refs/heads/main/OfficialReleases/Games/Dragon-Adventures/recall/InstancesESP/Chest.lua'))()
+
+local placeId = game.PlaceId
+	-- Finds whether or not devive in a computer or mobile device.
+		local UserInputService = game:GetService("UserInputService")
+		local IsOnMobile
+		local IsOnComputer
+		if UserInputService.TouchEnabled then
+			IsOnMobile = true
+		elseif UserInputService.MouseIconEnabled then
+			IsOnComputer = true
+		else
+   			IsOnComputer = true
+		end
+-- Runs the script connected to the placeID
+
